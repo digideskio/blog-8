@@ -2,7 +2,6 @@
    Includes
    ========================================================================== */
 
-@import url('//fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Cardo:400,400italic,700');
 @import url('normalize.css');
 @import url('icons.css');
 @import url('highlight.css');
@@ -28,7 +27,7 @@ html {
 }
 
 body {
-	font: 400 2em / 1.5em 'Cardo', serif;
+	font: 400 1.8em / 1.5em 'proxima-nova', serif;
 	color: #4d4d4d;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -54,7 +53,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #000;
 }
@@ -104,9 +103,9 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 1em;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1.5em;
 	text-align: right;
 	color: #000;
@@ -163,7 +162,7 @@ em, i {
 	color: #262626;
 }
 strong, b {
-	font-weight: 700;
+	font-weight: 600;
 	color: #262626;
 }
 
@@ -184,7 +183,7 @@ dl dt {
     text-align: right;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 dl dd {
@@ -262,7 +261,7 @@ kbd {
     color: #666;
     text-shadow: #fff 0 1px 0;
     font-size: 0.9em;
-    font-weight: bold;
+    font-weight: 600;
     background: #f4f4f4;
     border-radius: 4px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
@@ -285,8 +284,8 @@ table td {
     border: 1px solid #ebe9e6;
 }
 table th {
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 500;
+	font-family: 'proxima-nova', sans-serif;
+	font-weight: 600;
 	font-size: 0.75em;
 	line-height: 1.25em;
 	padding: 0.666em;
@@ -418,14 +417,14 @@ img {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 700;
+	font-family: 'proxima-nova', sans-serif;
+	font-weight: 600;
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
 }
 .home-template .blog-name {
-	font-size: 3em;
+	font-size: 1.5em;
 }
 .has-cover .blog-name {
 	color: #fff;
@@ -484,7 +483,7 @@ img {
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
 	border: 1px solid #c2c7cc;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.666em;
 	text-shadow: none;
@@ -498,8 +497,8 @@ img {
 }
 .nav-button a:hover,
 .nav-button a:focus {
-	color: #f26a3d;
-	border-color: #f26a3d;
+	color: #5592DD;
+	border-color: #5592DD;
 }
 .cover-active .nav-button a {
 	color: #fff;
@@ -534,12 +533,12 @@ img {
 	height: 0;
 	top: 0;
 	right: 0;
-	background: #f26a3d;
-	background: rgba(242,97,48,.95);
+	background: #5592DD;
+	background: rgba(66,83,158,.95);
 	z-index: 400;
 	overflow: hidden;
 	opacity: 0;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	-webkit-transition: opacity ease .4s;
 	transition: opacity ease .4s;
 }
@@ -647,7 +646,7 @@ img {
 }
 #menu li.active a {
 	color: #fff;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 /* ==========================================================================
@@ -672,8 +671,8 @@ img {
 	display: block;
 	width: 0;
 	height: 1px;
-	background: #f26a3d;
-	box-shadow: 0 0 1px #f26a3d, 0 0 3px #f26a3d;
+	background: #42539E;
+	box-shadow: 0 0 1px #42539E, 0 0 3px #42539E;
 }
 
 /* ==========================================================================
@@ -683,7 +682,7 @@ img {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	line-height: 1em;
 	padding-bottom: 6em;
 }
@@ -751,7 +750,7 @@ img {
 }
 #blog-author.has-cover .post-author-name {
 	padding: 0.333em 0;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.025em;
 	line-height: 1.333em;
 	color: #fff;
@@ -858,9 +857,10 @@ img {
 	margin: 0 0 0.5em;
 	font-size: 2em;
 	line-height: 1em;
-	font-weight: 700;
+	font-weight: 600;
 	text-indent: -1px;
 	color: #000;
+	letter-spacing: -0.5px;
 }
 .has-cover .post-title {
 	color: #fff;
@@ -875,7 +875,7 @@ img {
 	z-index: 10;
 	display: block;
 	margin-bottom: 1.333em;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 0.75em;
 	font-weight: 400;
 	line-height: 1.333em;
@@ -898,11 +898,11 @@ img {
 	margin: 0;
 }
 .post-content a {
-	border-bottom: 1px solid #f26a3d;
+	border-bottom: 1px solid #5592DD;
 }
 .post-content a:hover,
 .post-content a:focus {
-	color: #f26a3d;
+	color: #5592DD;
 }
 .post-content img,
 .post-content .fluid-width-video-wrapper {
@@ -964,20 +964,20 @@ img {
 .post-tags {
 	max-width: 75%;
 	float: left;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 }
 .post-tags a {
 	display: inline-block;
 	margin: 0 0.333em 0.666em 0;
 	padding: 0.575em 1em;
 	background: #fff;
-	border: 1px solid #f26a3d;
+	border: 1px solid #5592DD;
 	font-size: 0.75em;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1.333em;
 	text-align: center;
 	text-decoration: none;
-	color: #f26a3d;
+	color: #5592DD;
 	-webkit-border-radius: 2em;
 	border-radius: 2em;
 	-webkit-transition: all ease 0.3s;
@@ -987,7 +987,7 @@ img {
 }
 .post-tags a:hover,
 .post-tags a:focus {
-	background: #f26a3d;
+	background: #5592DD;
 	color: #fff;
 }
 .post-author {
@@ -1021,7 +1021,7 @@ img {
 }
 .post-author-bio {
 	padding-left: 25%;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
     font-size: 0.75em;
     line-height: 1.333em;
 }
@@ -1088,7 +1088,7 @@ img {
 	margin: 0;
 	padding: 0.5em 1.25em;
 	border: 1px solid #c2c7cc;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.333em;
 	color: #8a9199;
@@ -1101,8 +1101,8 @@ img {
 }
 .post-comments-activate:hover,
 .post-comments-activate:focus {
-	color: #f26a3d;
-	border-color: #f26a3d;
+	color: #5592DD;
+	border-color: #5592DD;
 }
 .activated .post-comments-activate {
 	display: none;
@@ -1170,7 +1170,7 @@ img {
 }
 .post-nav a:hover i,
 .post-nav a:focus i {
-	color: #f26a3d;
+	color: #5592DD;
 }
 .post-nav-title {
 	margin: 0 0 0.5em;
@@ -1195,7 +1195,7 @@ img {
 	height: 2em;
 	margin: 0;
 	padding: 2em 0;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 }
 .pagination:after {
 	position: absolute;
@@ -1235,8 +1235,8 @@ img {
 }
 .pagination a:hover,
 .pagination a:focus {
-	color: #f26a3d;
-	border-color: #f26a3d;
+	color: #5592DD;
+	border-color: #5592DD;
 }
 .pagination .pagination-label {
 	position: relative;
@@ -1296,7 +1296,7 @@ img {
 
 @media only screen and (max-width: 640px) {
 	html {
-	    font-size: 50%;
+	    font-size: 65%;
 	}
 	.post-share,
 	.post-tags {

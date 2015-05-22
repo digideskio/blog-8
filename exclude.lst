@@ -1,0 +1,4 @@
+*.git*
+exclude.lst
+build.sh
+

@@ -114,7 +114,7 @@ jQuery(function($) {
 	   Initialize and load Disqus
 	   ========================================================================== */
 
-	var disqusShortname = 'no-disqus'; //replace with your disqus shortname
+	var disqusShortname = 'dockbit-blog'; //replace with your disqus shortname
 	
 	if (disqusShortname == 'no-disqus') {
 		$('.post-comments').css({
