@@ -1,6 +1,7 @@
 jQuery(function($) {
 
 	var body = $('body');
+	var html = $('html');
 	var viewport = $(window);
 
 	/* ==========================================================================
@@ -8,7 +9,7 @@ jQuery(function($) {
 	   ========================================================================== */
 
 	function menu() {
-		body.toggleClass('menu-active');
+		html.toggleClass('menu-active');
 	};
 	
 	$('#menu').on({
@@ -18,6 +19,12 @@ jQuery(function($) {
 	});
 	
 	$('.menu-button').on({
+		'click': function() {
+			menu();
+		}
+	});
+	
+	$('.hidden-close').on({
 		'click': function() {
 			menu();
 		}
@@ -35,9 +42,10 @@ jQuery(function($) {
 			var windowPosition = viewport.scrollTop();
 			(windowPosition > 0) ? coverPosition = Math.floor(windowPosition * 0.25) : coverPosition = 0;
 			cover.css({
-				'transform' : 'translate(0, ' + coverPosition + 'px)'
+				'-webkit-transform' : 'translate3d(0, ' + coverPosition + 'px, 0)',
+				'transform' : 'translate3d(0, ' + coverPosition + 'px, 0)'
 			});
-			(viewport.scrollTop() < cover.height()) ? body.addClass('cover-active') : body.removeClass('cover-active');
+			(viewport.scrollTop() < cover.height()) ? html.addClass('cover-active') : html.removeClass('cover-active');
 		}
 	}
 	prlx();
@@ -114,9 +122,7 @@ jQuery(function($) {
 	   Initialize and load Disqus
 	   ========================================================================== */
 
-	var disqusShortname = 'dockbit-blog'; //replace with your disqus shortname
-	
-	if (disqusShortname == 'no-disqus') {
+	if (typeof disqus === 'undefined') {
 		$('.post-comments').css({
 			'display' : 'none'
 		});
@@ -124,7 +130,7 @@ jQuery(function($) {
 		$('#show-disqus').on('click', function() {
 			$.ajax({
 				type: "GET",
-				url: "http://" + disqusShortname + ".disqus.com/embed.js",
+				url: "//" + disqus + ".disqus.com/embed.js",
 				dataType: "script",
 				cache: true
 			});

@@ -17,3 +17,4 @@ A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/
 ## Setup
 
 Create a zipped theme with ```./build.sh``` and [upload the theme](https://ghost.org/blogs/dockbit).
+
