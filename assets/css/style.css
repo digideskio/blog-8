@@ -954,7 +954,7 @@ input {
 	line-height: 1.333em;
 	opacity: 0.5;
 }
-.has-cover .post-meta {
+.has-cover .post-meta, .has-cover .post-meta a {
 	color: #fff;
 	opacity: 0.75;
 }
