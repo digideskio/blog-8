@@ -1,0 +1,6 @@
+User-agent: *
+Sitemap: http://app.wistia.com/sitemaps/70741.xml
+Sitemap: http://blog.dockbit.com/sitemap.xml
+Disallow: /ghost/
+Disallow: /admin/
+
