@@ -809,7 +809,7 @@ input {
 	border: 0;
 }
 #blog-author .post-author-avatar {
-	width: 20%;
+	width: 10%;
 	margin: 0 2.5%;
 }
 #blog-author.has-cover .post-author-avatar {
@@ -984,8 +984,8 @@ input {
 .post-content img,
 .post-content .fluid-width-video-wrapper {
 	max-width: none;
-	width: 110%;
-	margin-left: -5%;
+	width: 120%;
+	margin-left: -10%;
 }
 .post-content .wistia-video-wrapper {
 	max-width: none;
@@ -1174,9 +1174,10 @@ input {
 	border-radius: 10em;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	max-width: 60px;
 }
 .post-author-bio {
-	padding-left: 25%;
+	padding-left: 20%;
 	font-family: 'aktiv-grotesk', sans-serif;
     font-size: 0.75em;
     line-height: 1.333em;
@@ -1229,39 +1230,6 @@ input {
 	margin-left: -19em;
 	content: '';
 	background: #e5e4e1;
-}
-.post-comments.activated {
-	margin: -1px 0 0;
-	padding: 1em;
-	background: #f2f2f0;
-	border: 1px solid #e5e4e1;
-}
-.post-comments.activated:after {
-	display: none;
-}
-.post-comments-activate {
-	display: inline-block;
-	margin: 0;
-	padding: 0.5em 1.25em;
-	border: 1px solid #c2c7cc;
-	font-family: 'aktiv-grotesk', sans-serif;
-	font-size: 0.75em;
-	line-height: 1.333em;
-	color: #8a9199;
-	text-align: center;
-	cursor: pointer;
-	-webkit-transition: all ease 0.3s;
-	transition: all ease 0.3s;
-	-webkit-border-radius: 2em;
-	border-radius: 2em;
-}
-.post-comments-activate:hover,
-.post-comments-activate:focus {
-	color: #f47c6f;
-	border-color: #f47c6f;
-}
-.activated .post-comments-activate {
-	display: none;
 }
 
 /* ==========================================================================

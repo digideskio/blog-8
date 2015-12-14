@@ -139,26 +139,6 @@ jQuery(function($) {
 	video();
 	
 	/* ==========================================================================
-	   Initialize and load Disqus
-	   ========================================================================== */
-
-	if (typeof disqus === 'undefined') {
-		$('.post-comments').css({
-			'display' : 'none'
-		});
-	} else {
-		$('#show-disqus').on('click', function() {
-			$.ajax({
-				type: "GET",
-				url: "//" + disqus + ".disqus.com/embed.js",
-				dataType: "script",
-				cache: true
-			});
-			$(this).parent().addClass('activated');
-		});
-	}
-
-	/* ==========================================================================
 	   Signup
 	   ========================================================================== */
 	$("#signup-form").submit(function() {

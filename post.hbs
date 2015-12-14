@@ -61,8 +61,8 @@
 
 				<aside class="signup">
 					<p>
-						Dockbit is one place to visualize, orchestrate and analyze your team's software deployments. Wanna give it a spin?
-						<strong>Sign up for an early access.</strong>
+						Dockbit turns your software deployments into repeatable, manageable workflows. Bring your team together and ship better.
+						<strong>Sign up for early access.</strong>
 					</p>
 					<form id="signup-form" action="https://dockbit.us11.list-manage.com/subscribe/post?u=18d6264d53b9c28dbc11605f0&amp;id=4706c460d4" 
 						  method="post" 
@@ -98,13 +98,6 @@
 				{{/author}}
 
 			</section>
-			
-
-			<section class="post-comments">
-				<a id="show-disqus" class="post-comments-activate">Show Comments</a>
-				<div id="disqus_thread"></div>
-
-			</section>
 
 			<aside class="post-nav">
 				{{#next_post}}
@@ -128,6 +121,19 @@
 				<div class="clear"></div>
 			</aside>
 
+			<section class="post-comments">
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+				    var disqus_shortname = 'dockbit-blog';
+				    var disqus_identifier = '{{post.id}}';
+				 
+				    (function() {
+				        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				    })();
+				</script>
+			</section>
 
 		</div>
 	</article>
