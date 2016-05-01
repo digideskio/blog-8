@@ -453,12 +453,12 @@ input {
 	line-height: 1em;
 	text-decoration: none;
 }
-.home-template .blog-name {
-	font-size: 1.5em;
-}
-.home-template .blog-name img {
+.blog-name img {
 	max-height: 80px;
 	margin: 0.5em auto;
+}
+.home-template .blog-name {
+	font-size: 1.5em;
 }
 .has-cover .blog-name {
 	color: #fff;
@@ -1081,69 +1081,33 @@ input {
 	padding: 1em 4em 3em 4em;
 	margin: 40px auto;
 	border-radius: 4px;
+	text-align: center;
 }
 
-.signup strong {
-	padding-top: 15px;
-	color: #fff;
+.signup .button {
+	display: inline-block;
+	border: 2px solid #FC9A86;
+	height: 54px;
+	padding: 0 40px;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	-ms-transition: background-color 0.3s linear;
+	transition: background-color 0.3s linear;
+	border-radius: 30px;
+	background: #F5755B;
+	color: #FFFFFF;
+	font-size: 16px;
 	font-weight: 500;
-	display: block;
-}
-
-.signup form {
-    position: relative;
-    max-width: 470px;
-}
-
-.signup input[type=text],
-.signup input[type=submit] {
+	line-height: 48px;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.05);
+	text-align: center;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	height: 50px;
-	font-size: 1.5rem;
-	font-weight: 500;
-	border: none;
-	outline: none;
-	line-height: normal;
 }
 
-.signup input[type=text] {
-	background: #fff;
-	border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-radius: 25px;
-    width: 100%;
-    padding: 0 20px;
-    box-shadow: inset 0px 2px 0 0 rgba(0, 0, 0, 0.07);
-    color: #585d68;
-}
-
-.signup input[type=submit] {
-    text-transform: none;
-    border-radius: 30px;
-    font-weight: 500;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: 0;
-    margin-right: -1px;
-    background: #F5755B;
-    color: #fff;
-    padding: 0 25px;
-}
-.signup input[type=submit]:focus {
-    color: #fff;
-}
-
-.signup input[type=submit]:hover {
-    background-color: #E8705B;
-    -webkit-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    -o-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
-    color: #fff;
+.signup .button:hover {
+	background-color: #DD6046;
 }
 
 .post-author {
